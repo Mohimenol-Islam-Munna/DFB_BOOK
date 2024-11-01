@@ -9,16 +9,12 @@
     <link rel="stylesheet" href="{% static 'pages/css/base.css' %}" />
   </head>
   <body>
-    <header class="container header">
-      <div><h2>Header of the application</h2></div>
-    </header>
+    {% include 'pages/_header.html' %}
+    
     <main class="container content">
       {% block content %} No Content Provided {% endblock %}
     </main>
-    <footer class="container footer">
-      <div><h2>Footer of the application</h2></div>
-    </footer>
 
-    <script src="{% static 'pages/js/home.js' %}"></script>
+    {% include 'pages/_footer.html' %}
   </body>
 </html>

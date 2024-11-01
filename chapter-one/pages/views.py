@@ -6,7 +6,9 @@ def homePageView(request):
 
     context = {
         "name": "Munna",
-        "dept": "cse"
+        "dept": "cse",
+        "stacks": ["js", "ts", "py", "go"],
+        "frameworks": [{"name": "react js", "type": "frontend"}, {"name": "next js", "type": "frontend"},{"name": "express js", "type": "backend"},{"name": "django", "type": "backend"}]
     }
 
     

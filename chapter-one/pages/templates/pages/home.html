@@ -23,5 +23,11 @@
       height="150"
     />
   </div>
+
+  <script>
+    const frameworks = `{{ frameworks|safe }}`
+
+    console.log("context ", frameworks, frameworks.length)
+  </script>
 </div>
 {% endblock %}
