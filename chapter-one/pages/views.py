@@ -1,11 +1,6 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-<<<<<<< HEAD
-from django.http import HttpResponse
-from django.views.generic import TemplateView
-=======
 from django.template.response import TemplateResponse
->>>>>>> 74c72c099d8869338ebbe664d640e1da213497f1
 
 def homePageView(request):
 
@@ -17,14 +12,6 @@ def homePageView(request):
     }
 
     
-<<<<<<< HEAD
-    return HttpResponse("Hello World")
-
-class AboutPageView(TemplateView):
-    print("----------------about page request :")
-
-    template_name = "about.html"
-=======
     return TemplateResponse(request, "pages/home.html", context)
 
 
@@ -41,4 +28,3 @@ def contactPageView(request):
 
 def profilePageView(request, id):
     return JsonResponse({"name": "ifti", "id": id})
->>>>>>> 74c72c099d8869338ebbe664d640e1da213497f1
