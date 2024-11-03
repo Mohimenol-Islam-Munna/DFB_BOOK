@@ -19,3 +19,13 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.jq_container {
+  border: 1px solid salmon;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.red {
+  color: red;
+}
