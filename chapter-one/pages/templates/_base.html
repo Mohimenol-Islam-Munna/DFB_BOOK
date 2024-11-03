@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Pages App {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'pages/css/base.css' %}" />
+  </head>
+  <body>
+    {% include 'pages/_header.html' %}
+    
+    <main class="container content">
+      {% block content %} No Content Provided {% endblock %}
+    </main>
+
+    {% include 'pages/_footer.html' %}
+  </body>
+</html>

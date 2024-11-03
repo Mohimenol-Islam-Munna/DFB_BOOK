@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 10px;
+  border: 1px solid red;
+}
+
+.header,
+.footer {
+  width: 100%;
+  background-color: aquamarine;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

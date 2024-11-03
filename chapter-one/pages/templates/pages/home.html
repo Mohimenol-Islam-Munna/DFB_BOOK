@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h2>This is home page</h2>
-  </body>
-</html>
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Home Page{% endblock %} 
+
+{% block content %}
+<div>
+  <h2>This is home page</h2>
+  <h2>My name is {{name}}</h2>
+
+  <h3>Create Django Template Variable</h3>
+  {% with name="Md. Mohimenol Islam Munna" %}
+  <h3>My full name is <a href="{% url 'profile' 123 %}">{{name}}</a></h3>
+  {% endwith %}
+
+  <div>
+    <h2>World Cup Trophy</h2>
+    <img
+      src="{% static 'pages/images/mc.jpg'%}"
+      alt="messi"
+      width="150"
+      height="150"
+    />
+  </div>
+
+  <script>
+    const frameworks = `{{ frameworks|safe }}`
+
+    console.log("context ", frameworks, frameworks.length)
+  </script>
+</div>
+{% endblock %}
