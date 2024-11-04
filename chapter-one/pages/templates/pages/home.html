@@ -24,10 +24,16 @@
     />
   </div>
 
+ <div>
+  <button id="#data_fetch">Data Fetch</button>
+ </div>
+
   <script>
     const frameworks = `{{ frameworks|safe }}`
 
     console.log("context ", frameworks, frameworks.length)
   </script>
+
+  <script src="{% static 'pages/js/home.js' %}"></script>
 </div>
 {% endblock %}
