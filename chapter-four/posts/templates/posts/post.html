@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Page</title>
+  </head>
+  <body>
+    <h2>All The Post</h2>
+    <p>This is the description of post page</p>
+    <div>
+      {% for post in post_list %}
+        <h2>Item</h2>
+        <p>{{ post.text }}</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>
