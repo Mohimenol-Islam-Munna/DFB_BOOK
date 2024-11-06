@@ -2,6 +2,10 @@
 
 {% load static %}
 
+{% block css %}
+  <link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
+{% endblock %}
+
 {% block title %}Home Page{% endblock %} 
 
 {% block content %}
@@ -15,7 +19,7 @@
   {% endwith %}
 
   <div>
-    <h2>World Cup Trophy</h2>
+    <h2 class="title">World Cup Trophy</h2>
     <img
       src="{% static 'pages/images/mc.jpg'%}"
       alt="messi"
