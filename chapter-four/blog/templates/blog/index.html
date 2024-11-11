@@ -1,10 +1,12 @@
-{% extends '_base.html' %} {% block content %}
+{% extends '_base.html' %} {% load static %} {% block page_css %}
+<link rel="stylesheet" href="{% static 'blog/css/index.css' %}" />
+{% endblock %} {% block content %}
 <h2>All Blog Post.</h2>
 <p>This is the blog page description</p>
 
 <div>
   {% for post in post_list %}
-  <div>
+  <div class="blog_container">
     <h3>{{ post.title }}</h3>
     <p>{{ post.body}}</p>
     <button>

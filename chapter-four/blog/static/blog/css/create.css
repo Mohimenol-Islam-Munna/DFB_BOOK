@@ -1,0 +1,22 @@
+.form_container {
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.form_container > form > div {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container > form > div > label {
+  padding-bottom: 10px;
+}
+
+.form_container > form > div > input,
+.form_container > form > div > select,
+.form_container > form > div > textarea {
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+}

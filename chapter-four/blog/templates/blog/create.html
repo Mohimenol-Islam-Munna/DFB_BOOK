@@ -1,0 +1,15 @@
+{% extends '_base.html' %} {% load static %} {% block page_css %}
+<link rel="stylesheet" href="{% static 'blog/css/create.css' %}" />
+{% endblock %} {% block content %}
+<div>
+  <h2>this is create blog post html page</h2>
+  <div class="form_container">
+    <form action="" method="post">
+      {% csrf_token %} {{ form.as_div }}
+      <div>
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
