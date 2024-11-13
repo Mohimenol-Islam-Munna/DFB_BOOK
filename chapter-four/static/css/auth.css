@@ -1,0 +1,21 @@
+.login_container {
+  margin: 20px 0px;
+  border: 1px solid palegoldenrod;
+  padding: 20px;
+}
+
+.form_container > div {
+  margin: 20px 0px;
+  border: 1px solid palegoldenrod;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_container > div > input,
+.form_container > div > button {
+  padding: 10px;
+  border-radius: 10px;
+}

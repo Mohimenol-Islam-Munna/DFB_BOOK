@@ -15,6 +15,16 @@
   min-height: 100vh;
 }
 
+.title {
+  padding: 16px 0px;
+}
+
+.content {
+  padding: 16px;
+  background-color: palegoldenrod;
+  border-radius: 16px;
+}
+
 .header,
 .footer {
   background-color: aquamarine;

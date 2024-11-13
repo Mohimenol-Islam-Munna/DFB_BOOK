@@ -12,6 +12,12 @@
     <button>
       <a href="{% url 'blog_detail' post.pk %}">view</a>
     </button>
+    <button>
+      <a href="{% url 'blog_update' post.pk %}">Edit</a>
+    </button>
+    <button>
+      <a href="{% url 'blog_delete' post.pk %}">Delete</a>
+    </button>
   </div>
   {% endfor %}
 </div>
